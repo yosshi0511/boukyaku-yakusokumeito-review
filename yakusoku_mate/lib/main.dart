@@ -85,7 +85,13 @@ class _MemoListPageState extends State<MemoListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('共有メモ'),
+        title: const Text('やくそくメイト',
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.blue,
+        ),
+        ),
       ),
 
       body: memos.isEmpty
